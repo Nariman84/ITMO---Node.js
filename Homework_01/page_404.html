@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width">
+	<meta charset="UTF-8">
+	<title>404</title>
+	<style>
+		* {
+		    box-sizing: border-box;
+		}
+		body{
+			font-size: 20px;
+		}
+		.box {
+			margin: auto;
+			background-image: url(https://pp.userapi.com/c840336/v840336702/8e237/htY56BIrtpk.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 700px;
+			padding-top: 20px;
+			opacity: 0.3;
+			position: relative;
+		}
+		.content {
+			padding-top: 30px;
+			margin: auto;
+			width: 100%;
+			text-align: center;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+		}
+		.error_code {
+			font-size: 100px;
+			margin: 20px auto;
+			color: #003980;
+			width: 800px;
+		}
+		.error {
+			width: 800px;
+			text-align: left;
+			font-size: 16px;
+			margin: auto;
+		}
+		.description {
+			width: 800px;
+			text-align: left;
+			font-size: 20px;
+			margin: auto;
+			padding-top: 30px;
+		}
+		#imgButton {
+			padding-top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<script src="Homework_01.js"></script>
+	<div>
+		<div class="box"></div>
+		<div class="content">
+			<h1 class="error_code">404</h1>
+			<p >Ошибка!!!</p>
+			<h5 class="description" style="text-align: center;">О, нееет! <br>
+			Видимо, разряд молнии закоротил микрочип, контролирующий временной контур :(
+			</h5>
+			<div class="error">
+				<p>Но вероятно, причины в следующем:</p>
+				<ul>
+					<li>Возможно, вы ошиблись при наборе адреса</li>
+					<li>Cсылка, по которой вы прошли, устарела</li>
+				</ul>
+			</div>
+			<img id="imgButton" onclick="imgchange()" class="buttonhomepage" src="https://pp.userapi.com/c840336/v840336702/8e22d/qPOKNgL0rQY.jpg">
+			<script>
+				var flag = false;
+				function imgchange() {
+					if (flag)
+						document.all.imgButton.src = "https://pp.userapi.com/c840336/v840336702/8e22d/qPOKNgL0rQY.jpg";
+					else
+						document.all.imgButton.src = "https://media.giphy.com/media/d6ALMb30Fojf2/giphy.gif";
+					flag = !flag;
+					setTimeout (imgchange, 7250);
+					setTimeout('window.location = "index_01.html"', 6090);
+				};
+			</script>
+		</div>
+	</div>
+</body>
+</html>
